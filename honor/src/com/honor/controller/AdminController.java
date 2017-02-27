@@ -13,7 +13,7 @@ import com.honor.entity.Admin;
 import com.honor.service.AdminService;
 
 @Controller
-@RequestMapping("admin")
+@RequestMapping("web/admin")
 public class AdminController {
 
 	@Resource
@@ -21,7 +21,7 @@ public class AdminController {
 	
 	
 	@RequestMapping("test.html")
-	public String listAllUsers(HttpServletRequest req,HttpServletResponse resp){
+	public String login(HttpServletRequest req,HttpServletResponse resp){
 		
 		System.out.println("===============test.html==============");
 		List<Admin> list =this.adminService.listAdminBySql("from Admin");

@@ -10,7 +10,7 @@ import com.honor.dao.AdminDao;
 import com.honor.entity.Admin;
 
 @Service
-public class AdminService {
+public class AdminService{
 
 	@Resource
 	protected AdminDao dao;
@@ -34,10 +34,18 @@ public class AdminService {
 
 		return dao.getAdminById(id);
 	}
+	
 
 	public List<Admin> listAdminBySql(String sql) {
 
 		return dao.listAdminBySql(sql);
+	}
+
+
+	public boolean checkExist(Object[] obj) {
+		// TODO Auto-generated method stub
+		
+		return dao.checkExist(obj);
 	}
 
 }

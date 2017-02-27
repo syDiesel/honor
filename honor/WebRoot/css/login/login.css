@@ -15,7 +15,7 @@ body,html {
 }
 
 body {
-	background: url(../../img/login/web_login_bg.jpg) no-repeat center;
+	background: url(../../image/login/web_login_bg.jpg) no-repeat center;
 	background-size: cover;
 }
 
@@ -56,7 +56,7 @@ a.logo {
 }
 
 #darkbannerwrap {
-	background: url(../../img/login/aiwrap.png);
+	background: url(../../image/login/aiwrap.png);
 	width: 18px;
 	height: 10px;
 	margin: 0 0 20px -58px;
@@ -117,20 +117,17 @@ hr.hr20 {
 	width: 100%;
 }
 
-.name{
-	width:40px;height:40px;background:url(../../img/element.jpg) no-repeat 0 center;
-}
+
 
 .icon-user {
 	
-	position: absolute;
-	left: 0；z-index:5;
-	background-repeat: no-repeat; /*设置图片不重复*/
+	/* position: absolute; */
+	/* left: 0；z-index:5;
+	background-repeat: no-repeat; 设置图片不重复
 	background-image: url(../../img/element.jpg);
-	background-position: 40px 40px; /*图片显示的位置*/
-	width: 40px; /*设置图片显示的宽*/
-	height: 40px; /*图片显示的高*/
-	display: inlne;
+	background-position: 40px 40px; 图片显示的位置
+	width: 40px; 设置图片显示的宽
+	height: 40px; 图片显示的高 */
 }
 
 .copyright {

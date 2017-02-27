@@ -11,7 +11,7 @@ import com.honor.entity.Admin;
 
 @Component
 @SuppressWarnings("unchecked")
-public class AdminDao {
+public class AdminDao{
 
 	@Resource
 	protected HibernateTemplate hibernateTemplate;
@@ -40,4 +40,16 @@ public class AdminDao {
 
 		return this.hibernateTemplate.find(sql);
 	}
+
+	public boolean checkExist(Object[] obj) {
+		// TODO Auto-generated method stub
+		String sql = "";
+		if(obj.length == 2){
+			sql = "from Admin where name = '"+obj[0]+"' and password = '"+obj[1]+"'";
+			return listAdminBySql(sql) != null ? true:false;
+		}
+		
+		return false;
+	}
+
 }
