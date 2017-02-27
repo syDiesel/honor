@@ -9,7 +9,7 @@
 	<display-name>质量管理系统</display-name>
 
 	<welcome-file-list>
-		<welcome-file>web/com/login.jsp</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
 	<!-- 过滤静态资源 -->

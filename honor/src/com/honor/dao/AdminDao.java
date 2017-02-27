@@ -16,19 +16,19 @@ public class AdminDao {
 	@Resource
 	protected HibernateTemplate hibernateTemplate;
 	
-	public void saveAdmin(Admin admin){
+	public void saveAdmin(Admin obj){
 		
-		hibernateTemplate.save(admin);
+		hibernateTemplate.save(obj);
 	}
 	
-	public void updateAdmin(Admin admin) {
+	public void updateAdmin(Admin obj) {
 
-		hibernateTemplate.update(admin);
+		hibernateTemplate.update(obj);
 	}
 
-	public void deleteAdmin(Admin admin) {
+	public void deleteAdmin(Admin obj) {
 
-		hibernateTemplate.delete(admin);
+		hibernateTemplate.delete(obj);
 	}
 	
 	public Admin getAdminById(int id){

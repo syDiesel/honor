@@ -14,20 +14,25 @@ public class AdminService {
 
 	@Resource
 	protected AdminDao dao;
-	
-	public void saveUserInfo(Admin obj) {
+
+	public void saveAdmin(Admin obj) {
 
 		dao.saveAdmin(obj);
 	}
 
-	public void updateUserInfo(Admin obj) {
+	public void updateAdmin(Admin obj) {
 
 		dao.updateAdmin(obj);
 	}
 
-	public void deleteUserInfo(Admin obj) {
+	public void deleteAdmin(Admin obj) {
 
 		dao.deleteAdmin(obj);
+	}
+
+	public Admin getAdminById(int id) {
+
+		return dao.getAdminById(id);
 	}
 
 	public List<Admin> listAdminBySql(String sql) {
